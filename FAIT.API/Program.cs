@@ -1,6 +1,7 @@
 using FAIT.Application.Abstraction;
 using FAIT.Application.Implementations;
 using FAIT.Domain.User;
+using FAIT.Infrastructure;
 using FAIT.Persistence.Data;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
@@ -13,6 +14,7 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddControllers();
 builder.Services.AddScoped<IUserServices, UserServices>();
+builder.Services.AddScoped<IFileServices, PhysicalFileServices>();
 builder.Services.AddDbContext<ApplicationDbContext>(op => op.UseSqlServer(builder.Configuration["ConnectionStrings:Default"]));
 builder.Services.AddIdentityCore<AppUser>().AddRoles<IdentityRole<Guid>>().AddEntityFrameworkStores<ApplicationDbContext>();
 

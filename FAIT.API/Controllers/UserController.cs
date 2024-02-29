@@ -45,4 +45,18 @@ public class UserController: ControllerBase
             return BadRequest(e.Message);
         }
     }
+
+    [HttpPost("{id:guid}/change-profile-image")]
+    public async Task<ActionResult> Change(Guid id,[FromForm] ChangeProfileImageDto dto)
+    {
+        try
+        {
+            await _userServices.ChangeProfileImage(id, dto.File);
+            return Ok();
+        }
+        catch (Exception e)
+        {
+            return BadRequest(e.Message);
+        }
+    }
 }

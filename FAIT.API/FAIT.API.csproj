@@ -17,6 +17,7 @@
 
     <ItemGroup>
       <ProjectReference Include="..\FAIT.Application\FAIT.Application.csproj" />
+      <ProjectReference Include="..\FAIT.Infrastructure\FAIT.Infrastructure.csproj" />
     </ItemGroup>
 
 </Project>

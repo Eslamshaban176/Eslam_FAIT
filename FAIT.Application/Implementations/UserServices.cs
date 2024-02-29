@@ -12,13 +12,14 @@ public class UserServices : IUserServices
 {
     private readonly ApplicationDbContext _context;
     private readonly UserManager<AppUser> _userManager;
+    private readonly IFileServices _fileServices;
 
-    public UserServices(ApplicationDbContext context, UserManager<AppUser> userManager)
+    public UserServices(ApplicationDbContext context, UserManager<AppUser> userManager, IFileServices fileServices)
     {
         _context = context;
         _userManager = userManager;
+        _fileServices = fileServices;
     }
-
 
     public async Task AddUser(AddUserDto userDto)
     {
@@ -71,8 +72,16 @@ public class UserServices : IUserServices
         return userProfile;
     }
 
-    public Task ChangeProfileImage(Guid userId, IFormFile file)
+    public async Task ChangeProfileImage(Guid userId, IFormFile file)
     {
-        throw new NotImplementedException();
+        var user = await _context.Users
+            .FirstOrDefaultAsync(x => x.Id == userId);
+
+        if (user == null)
+            throw new ArgumentException("Not Found!");
+
+        var path = await _fileServices.Upload(file);
+        user.Image = path;
+        await _context.SaveChangesAsync();
     }
 }

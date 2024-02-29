@@ -1,0 +1,13 @@
+C:\Users\Mahmoud\OneDrive\Desktop\Eslam_FAIT\FAIT.Domain\bin\Debug\net8.0\FAIT.Domain.deps.json
+C:\Users\Mahmoud\OneDrive\Desktop\Eslam_FAIT\FAIT.Domain\bin\Debug\net8.0\FAIT.Domain.dll
+C:\Users\Mahmoud\OneDrive\Desktop\Eslam_FAIT\FAIT.Domain\bin\Debug\net8.0\FAIT.Domain.pdb
+C:\Users\Mahmoud\OneDrive\Desktop\Eslam_FAIT\FAIT.Domain\obj\Debug\net8.0\FAIT.Domain.csproj.AssemblyReference.cache
+C:\Users\Mahmoud\OneDrive\Desktop\Eslam_FAIT\FAIT.Domain\obj\Debug\net8.0\FAIT.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Mahmoud\OneDrive\Desktop\Eslam_FAIT\FAIT.Domain\obj\Debug\net8.0\FAIT.Domain.AssemblyInfoInputs.cache
+C:\Users\Mahmoud\OneDrive\Desktop\Eslam_FAIT\FAIT.Domain\obj\Debug\net8.0\FAIT.Domain.AssemblyInfo.cs
+C:\Users\Mahmoud\OneDrive\Desktop\Eslam_FAIT\FAIT.Domain\obj\Debug\net8.0\FAIT.Domain.csproj.CoreCompileInputs.cache
+C:\Users\Mahmoud\OneDrive\Desktop\Eslam_FAIT\FAIT.Domain\obj\Debug\net8.0\FAIT.Domain.sourcelink.json
+C:\Users\Mahmoud\OneDrive\Desktop\Eslam_FAIT\FAIT.Domain\obj\Debug\net8.0\FAIT.Domain.dll
+C:\Users\Mahmoud\OneDrive\Desktop\Eslam_FAIT\FAIT.Domain\obj\Debug\net8.0\refint\FAIT.Domain.dll
+C:\Users\Mahmoud\OneDrive\Desktop\Eslam_FAIT\FAIT.Domain\obj\Debug\net8.0\FAIT.Domain.pdb
+C:\Users\Mahmoud\OneDrive\Desktop\Eslam_FAIT\FAIT.Domain\obj\Debug\net8.0\ref\FAIT.Domain.dll
